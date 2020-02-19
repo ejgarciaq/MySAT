@@ -53,12 +53,15 @@
             // 
             // BtnIngresar
             // 
+            this.BtnIngresar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnIngresar.FlatAppearance.BorderSize = 0;
+            this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIngresar.Location = new System.Drawing.Point(167, 195);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(75, 23);
             this.BtnIngresar.TabIndex = 2;
             this.BtnIngresar.Text = "Ingresar";
-            this.BtnIngresar.UseVisualStyleBackColor = true;
+            this.BtnIngresar.UseVisualStyleBackColor = false;
             this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
             // 
             // CkBtnMostrar
@@ -81,7 +84,7 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // login
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,7 +95,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "login";
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MySAT";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
