@@ -54,12 +54,15 @@
             // 
             // archivoToolStripMenuItem
             // 
+            this.archivoToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.archivoToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
             this.tiposDeEquiposToolStripMenuItem,
             this.marcasToolStripMenuItem,
             this.modelosToolStripMenuItem,
             this.equiposToolStripMenuItem});
+            this.archivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
@@ -67,37 +70,39 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // tiposDeEquiposToolStripMenuItem
             // 
             this.tiposDeEquiposToolStripMenuItem.Name = "tiposDeEquiposToolStripMenuItem";
-            this.tiposDeEquiposToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.tiposDeEquiposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tiposDeEquiposToolStripMenuItem.Text = "Tipos de Equipos";
             // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.marcasToolStripMenuItem.Text = "Marcas";
             // 
             // modelosToolStripMenuItem
             // 
             this.modelosToolStripMenuItem.Name = "modelosToolStripMenuItem";
-            this.modelosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.modelosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modelosToolStripMenuItem.Text = "Modelos";
             // 
             // equiposToolStripMenuItem
             // 
             this.equiposToolStripMenuItem.Name = "equiposToolStripMenuItem";
-            this.equiposToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.equiposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.equiposToolStripMenuItem.Text = "Equipos";
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.BtnClientes);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
@@ -106,16 +111,19 @@
             // 
             // BtnClientes
             // 
+            this.BtnClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnClientes.AutoSize = true;
             this.BtnClientes.BackColor = System.Drawing.Color.Transparent;
             this.BtnClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClientes.FlatAppearance.BorderSize = 0;
             this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnClientes.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnClientes.Location = new System.Drawing.Point(42, 4);
+            this.BtnClientes.Image = global::MySAT.Properties.Resources.clientes;
+            this.BtnClientes.Location = new System.Drawing.Point(0, 0);
             this.BtnClientes.Margin = new System.Windows.Forms.Padding(0);
             this.BtnClientes.Name = "BtnClientes";
-            this.BtnClientes.Size = new System.Drawing.Size(116, 62);
+            this.BtnClientes.Size = new System.Drawing.Size(120, 69);
             this.BtnClientes.TabIndex = 0;
             this.BtnClientes.Text = "Clientes";
             this.BtnClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -142,6 +150,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
