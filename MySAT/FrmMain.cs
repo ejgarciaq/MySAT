@@ -22,6 +22,15 @@ namespace MySAT
             FrmClientes clientes = new FrmClientes();
             clientes.MdiParent = this;
             clientes.Show();
+
+        }
+
+        private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLogin Login = new FrmLogin();
+            Login.Show();
+            this.Close();
+         
         }
     }
 }

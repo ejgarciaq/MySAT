@@ -38,6 +38,10 @@
             this.equiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnClientes = new System.Windows.Forms.Button();
+            this.técnicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +65,11 @@
             this.tiposDeEquiposToolStripMenuItem,
             this.marcasToolStripMenuItem,
             this.modelosToolStripMenuItem,
-            this.equiposToolStripMenuItem});
+            this.equiposToolStripMenuItem,
+            this.técnicosToolStripMenuItem,
+            this.proveedoresToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.cerrarToolStripMenuItem});
             this.archivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -123,21 +131,47 @@
             this.BtnClientes.Location = new System.Drawing.Point(0, 0);
             this.BtnClientes.Margin = new System.Windows.Forms.Padding(0);
             this.BtnClientes.Name = "BtnClientes";
-            this.BtnClientes.Size = new System.Drawing.Size(120, 69);
+            this.BtnClientes.Size = new System.Drawing.Size(136, 69);
             this.BtnClientes.TabIndex = 0;
             this.BtnClientes.Text = "Clientes";
             this.BtnClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnClientes.UseVisualStyleBackColor = false;
             // 
+            // técnicosToolStripMenuItem
+            // 
+            this.técnicosToolStripMenuItem.Name = "técnicosToolStripMenuItem";
+            this.técnicosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.técnicosToolStripMenuItem.Text = "Técnicos";
+            // 
+            // proveedoresToolStripMenuItem
+            // 
+            this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // cerrarToolStripMenuItem
+            // 
+            this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarToolStripMenuItem.Text = "Cerrar";
+            this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
+            // 
             // FrmMain
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(1010, 581);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -160,12 +194,16 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button BtnClientes;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiposDeEquiposToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modelosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem equiposToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button BtnClientes;
+        private System.Windows.Forms.ToolStripMenuItem técnicosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem cerrarToolStripMenuItem;
     }
 }
