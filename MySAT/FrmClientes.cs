@@ -16,5 +16,15 @@ namespace MySAT
         {
             InitializeComponent();
         }
+
+        private void FrmClientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

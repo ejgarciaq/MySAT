@@ -43,7 +43,7 @@
             // LabelBuscar
             // 
             this.LabelBuscar.AutoSize = true;
-            this.LabelBuscar.Location = new System.Drawing.Point(89, 22);
+            this.LabelBuscar.Location = new System.Drawing.Point(111, 21);
             this.LabelBuscar.Name = "LabelBuscar";
             this.LabelBuscar.Size = new System.Drawing.Size(40, 13);
             this.LabelBuscar.TabIndex = 0;
@@ -51,9 +51,10 @@
             // 
             // TbBuscarClientes
             // 
-            this.TbBuscarClientes.Location = new System.Drawing.Point(157, 18);
+            this.TbBuscarClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TbBuscarClientes.Location = new System.Drawing.Point(157, 21);
             this.TbBuscarClientes.Name = "TbBuscarClientes";
-            this.TbBuscarClientes.Size = new System.Drawing.Size(425, 20);
+            this.TbBuscarClientes.Size = new System.Drawing.Size(425, 13);
             this.TbBuscarClientes.TabIndex = 1;
             // 
             // BtnBuscar
@@ -63,7 +64,7 @@
             this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.Image")));
             this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnBuscar.Location = new System.Drawing.Point(603, 17);
+            this.BtnBuscar.Location = new System.Drawing.Point(589, 17);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(74, 21);
             this.BtnBuscar.TabIndex = 2;
@@ -74,18 +75,19 @@
             // DgwClientes
             // 
             this.DgwClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgwClientes.Location = new System.Drawing.Point(13, 52);
+            this.DgwClientes.Location = new System.Drawing.Point(6, 52);
             this.DgwClientes.Name = "DgwClientes";
-            this.DgwClientes.Size = new System.Drawing.Size(775, 350);
+            this.DgwClientes.Size = new System.Drawing.Size(775, 377);
             this.DgwClientes.TabIndex = 3;
             // 
             // BtnAgregar
             // 
+            this.BtnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAgregar.FlatAppearance.BorderSize = 0;
             this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregar.Image = global::MySAT.Properties.Resources.anadir;
             this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregar.Location = new System.Drawing.Point(376, 435);
+            this.BtnAgregar.Location = new System.Drawing.Point(368, 435);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(75, 23);
             this.BtnAgregar.TabIndex = 4;
@@ -95,11 +97,12 @@
             // 
             // BtnModificar
             // 
+            this.BtnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnModificar.FlatAppearance.BorderSize = 0;
             this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificar.Image = global::MySAT.Properties.Resources.modificar;
             this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificar.Location = new System.Drawing.Point(488, 435);
+            this.BtnModificar.Location = new System.Drawing.Point(480, 435);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(75, 23);
             this.BtnModificar.TabIndex = 5;
@@ -109,11 +112,12 @@
             // 
             // BtnEliminar
             // 
+            this.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEliminar.FlatAppearance.BorderSize = 0;
             this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminar.Image = global::MySAT.Properties.Resources.eliminar;
             this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminar.Location = new System.Drawing.Point(600, 435);
+            this.BtnEliminar.Location = new System.Drawing.Point(592, 435);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
             this.BtnEliminar.TabIndex = 6;
@@ -123,23 +127,26 @@
             // 
             // BtnCerrar
             // 
+            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCerrar.FlatAppearance.BorderSize = 0;
             this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrar.Image = global::MySAT.Properties.Resources.cerrar;
             this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCerrar.Location = new System.Drawing.Point(712, 435);
+            this.BtnCerrar.Location = new System.Drawing.Point(704, 435);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(75, 23);
             this.BtnCerrar.TabIndex = 7;
             this.BtnCerrar.Text = "Cerrar";
             this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 479);
+            this.ClientSize = new System.Drawing.Size(785, 470);
+            this.ControlBox = false;
             this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnModificar);
@@ -148,9 +155,16 @@
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.TbBuscarClientes);
             this.Controls.Add(this.LabelBuscar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmClientes";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.FrmClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgwClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
